@@ -1,0 +1,71 @@
+Problem :
+
+Suppose you are a software developer working at a fintech startup called CoverMate. You are assigned to create a console Insurance Premium calculator application using Spring Boot and the concept of Inversion of Control.
+
+Task 
+
+1. Go to start.spring.io and create a new project.
+
+2. Add the necessary dependencies for the project.
+
+3. Create a customer class with the following attributes:
+
+    a. String name
+
+    b. Integer age
+
+    c. Insurance as a dependency
+
+4. Create an Insurance interface with three methods
+
+    a. getInsurancePremium()
+
+    b. setInsurenceDetails with three boolean parameters mentioned in point 4
+
+    c. getInsuranceName()
+
+5. Create the class HealthInsurac which implements the Insurance interface. Override the interface methods and add the following attributes:
+
+    a. isSmoker(boolean)
+
+    b. isDrinker(boolean)
+
+    c. previousConditions(boolean)
+
+    d. insurance(double default = 10000, this is the base premium value).
+ 
+6. Create the class TermInsurance which implements the Insurance interface. Override the interface methods and  add the following attributes:
+
+    a. isMarried(boolean)
+
+    b. hasChildren(boolean)
+
+    c. isSalaried(boolean)
+
+    d. insurance(double default = 5000, this is the base premium value).
+
+7. Depending on the conditions of the customer and input, you have to increase the base insurance premium value. Implement this logic in the setInsuranceDetails method based on the condition below:
+
+    a. Term Insurence:
+
+        1. If salaried or married,  increase the premium 
+            by 1.5 times the base value.
+
+        2. If hasChildren is true,  increase the premium 
+            by 2 times the base value.
+
+    b. Health insurance:
+
+        1. If  Smoker or Drinker, increase the premium 
+            by 1.5 times the base value.
+ 
+        2. If the previous condition exists,  increase the 
+            premium by 2 times the base value.
+ 
+8. User Setter method to inject the dependency. Defines the bean definitions for the user, health insurance, and term insurance in XML.
+
+9. Run and test your code.
+
+
+flow chart 
+
